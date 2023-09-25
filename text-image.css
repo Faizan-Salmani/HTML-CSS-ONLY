@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'Poppins',sans-serif;
+}
+.one{
+    width: 320px;
+    height: 300px;
+}
+.two{
+    padding-top: 10px;
+    width: 340px;
+    height: 300px;
+}
+.two p{
+    line-height: 22.4px;
+    font-size: 16px;
+}
+@media(max-width:740px){
+    .main{
+        flex-direction: column;
+    }
+    .one{
+      margin: auto;
+      width: 340px;
+    }
+    .two{
+        margin: auto;
+    }
+}
+@media(max-width:350px){
+    .one,.two{
+      width: 300px;
+      text-align: center;
+    }  
+}
